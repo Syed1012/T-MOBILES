@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-MOBILES | HUAWEI - Products</title>
+
+        <!-- Site Logo in title bar-->
+        <link rel = "icon" href = "images/favicon.png" type = "image/x-icon">
+
+        <!-- cart logo-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>   
+        
+        <!-- linking CSS -->
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+           <div class="row">
+              
+             <div class="col-md-12 col-sm-12 col-lg-12 col-xl-3">
+                 <div class="logo">
+                    <a href="index.html" title="logo"> T-MOBILES </a>
+                 </div>
+                 
+                 <div class="mob-menu">
+                    <span>
+                       <i class="fa fa-bars"></i>
+                    </span>
+                 </div>
+              </div>
+              
+              <div class="col-md-12 col-sm-12 col-lg-12 col-xl-9">
+                 <div class="main-menu">
+                    
+                    <ul class="nav">
+                       
+                       <li><a href="index.html" class="active" id="homebutton">Home</a></li>
+
+                       <li><a href="#signup">Contact</a></li>
+
+
+                       <li class="brands" onmouseover="showBrandsDropdown()" onmouseout="hideBrandsDropdown()">
+                       <a href="Brands.html" id="brandsLink"> Brands </a>
+                       <div class="brands-dropdown tooltip">
+                           <a href="Apple.html">Apple</a><br>
+                           <a href="Samsung.html">Samsung</a><br>
+                           <a href="Vivo.html">Vivo</a><br>
+                           <a href="Oneplus.html">Oneplus</a><br>
+                           <a href="Redmi.html">Redmi</a><br>
+                           <a href="Google.html">Google</a><br>
+                           <a href="Nokia.html">Nokia</a><br>
+                           <a href="Oppo.html">Oppo</a><br>
+                           <a href="Huawei.html">Huawei</a>
+                       </div>
+                   
+               </li>
+
+               <li>
+                <a href="About.html" class="tooltip-about">About</a>
+                    </li> 
+                    
+                 
+                    <div class="cart">
+                        <div class="cart-icon">
+                          <i class="fa fa-shopping-cart"></i> 
+        
+                          <div class="cart-container">
+                            <div class="cart-header">
+                              <h2>Your Cart</h2>
+                              <button class="cart-close">&times;</button>
+                            
+                            </div>
+                            <table class="cart-items">
+                              <thead>
+                                <tr>
+                                  <th>Item</th>
+                                  <th>Quantity</th>
+                                  <th>Price</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <!-- Cart items will be added dynamically -->
+                              </tbody>
+                              <tfoot>
+                                <tr>
+                                  <div class="cart-total-container">
+                                    <span class="total-text"> <td colspan="2">Total:</td> </span>
+                                    <span id="cart-total"> <td id="cart-total">$0</td></span>
+                                  </div>
+                                  
+                                  
+                                </tr>
+                              </tfoot>
+                            </table>
+                            
+                            <div class="cart-buttons">
+                              <button id="checkout-btn" class="btn btn-primary checkout-btn">
+                                <span class="btn-icon">
+                                  <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                <span class="btn-text">Checkout</span>
+                                <span class="btn-animation"></span>
+                              </button>
+                              
+                              <button id="clear-cart-btn" class="btn btn-danger clear-cart-btn">
+                                <span class="btn-icon">
+                                  <i class="fas fa-trash"></i>
+                                </span>
+                                <span class="btn-text">Clear Cart</span>
+                                <span class="btn-animation"></span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+                    
+                   
+
+
+                 </div>
+              </div>
+           </div>
+        </div>
+     </header>
+    <!-- ==== Header part End ==== -->
+
+    
+    <div class="product-section">
+        <div class="product-box">
+            <div class="product-image">
+                <img src="images/huawei/huawei-mate-50-rs-porsche-design.jpg" alt="Product Image 1">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name" style="font-size:x-large;" >Product 1 </h2>
+                <p class="product-price">$999</p>
+                <p class="product-specs">Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus gravida est ac viverra.</p>
+                
+                <div class="product-features">
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Performance</h5>
+                        <p class="feature-info">High-performance processor</p>
+                    </div>
+                
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Display</h5>
+                        <p class="feature-info">Vivid and bright display</p>
+                    </div>
+                
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Camera</h5>
+                        <p class="feature-info">Advanced camera technology</p>
+                    </div>
+                
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Battery</h5>
+                        <p class="feature-info">Long-lasting battery life</p>
+                    </div>
+
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-box">
+            <div class="product-image">
+                <img src="images/huawei/mate 40 pro.jpg" alt="Product Image 2">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name" style="font-size:x-large;">Product 2</h2>
+                <p class="product-price">$799</p>
+                <p class="product-specs">Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus gravida est ac viverra.</p>
+                <div class="product-features">
+                    
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Performance</h5>
+                        <p class="feature-info">Powerful and efficient</p>
+                    </div>
+
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Display</h5>
+                        <p class="feature-info">High-resolution display</p>
+                    </div>
+
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Camera</h5>
+                        <p class="feature-info">Professional-grade camera</p>
+                    </div>
+
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Battery</h5>
+                        <p class="feature-info">Fast-charging battery</p>
+                    </div>
+
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <div class="product-image">
+                <img src="images/huawei/mate 50 pro.jpg" alt="Product Image 2">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name" style="font-size:x-large;">Product 3</h2>
+                <p class="product-price">$799</p>
+                <p class="product-specs">Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus gravida est ac viverra.</p>
+                <div class="product-features">
+                    
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Performance</h5>
+                        <p class="feature-info">Powerful and efficient</p>
+                    </div>
+
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Display</h5>
+                        <p class="feature-info">High-resolution display</p>
+                    </div>
+
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Camera</h5>
+                        <p class="feature-info">Professional-grade camera</p>
+                    </div>
+
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Battery</h5>
+                        <p class="feature-info">Fast-charging battery</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <div class="product-image">
+                <img src="images/huawei/mate x2.jpg" alt="Product Image 2">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name" style="font-size:x-large;">Product 4</h2>
+                <p class="product-price">$799</p>
+                <p class="product-specs">Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus gravida est ac viverra.</p>
+                <div class="product-features">
+                    
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Performance</h5>
+                        <p class="feature-info">Powerful and efficient</p>
+                    </div>
+                    
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Display</h5>
+                        <p class="feature-info">High-resolution display</p>
+                    </div>
+                    
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Camera</h5>
+                        <p class="feature-info">Professional-grade camera</p>
+                    </div>
+                    
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Battery</h5>
+                        <p class="feature-info">Fast-charging battery</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <div class="product-image">
+                <img src="images/huawei/nova11.jpg" alt="Product Image 2">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name" style="font-size:x-large;">Product 4</h2>
+                <p class="product-price">$799</p>
+                <p class="product-specs">Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus gravida est ac viverra.</p>
+                <div class="product-features">
+                    
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Performance</h5>
+                        <p class="feature-info">Powerful and efficient</p>
+                    </div>
+                    
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Display</h5>
+                        <p class="feature-info">High-resolution display</p>
+                    </div>
+                    
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Camera</h5>
+                        <p class="feature-info">Professional-grade camera</p>
+                    </div>
+                    
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Battery</h5>
+                        <p class="feature-info">Fast-charging battery</p>
+                    </div>
+
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-box">
+            <div class="product-image">
+                <img src="images/huawei/p50 pro.jpg" alt="Product Image 2">
+            </div>
+            <div class="product-info">
+                <h2 class="product-name" style="font-size:x-large;">Product 4</h2>
+                <p class="product-price">$799</p>
+                <p class="product-specs">Specifications: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus gravida est ac viverra.</p>
+                <div class="product-features">
+                    
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Performance</h5>
+                        <p class="feature-info">Powerful and efficient</p>
+                    </div>
+
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Display</h5>
+                        <p class="feature-info">High-resolution display</p>
+                    </div>
+
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Camera</h5>
+                        <p class="feature-info">Professional-grade camera</p>
+                    </div>
+
+                    <div class="feature-column">
+                        <h5 class="feature-heading">Battery</h5>
+                        <p class="feature-info">Fast-charging battery</p>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ==== Footer part  ==== -->
+       <!--Contact form-->
+       <section class="section-form clearfix" id="signup" data-aos="fade-in" data-aos-duration="4000">
+        <div class="row">
+            <h2 class="mainheading1">More latest mobiles are up to release</h2>
+        </div>
+        <div class="row">
+            <form action="#" method="POST" class="contact-form">
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label></label>
+                    </div>                    
+                </div>
+            </form>
+        </div>
+     </section>
+
+
+<!-- ==== Footer part  ==== -->
+    <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#homepage">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+          <li class="menu__item"><a class="menu__link" href="#signup">Contact</a></li>
+     
+        </ul>
+        <p>&copy;2023 T-MOBILES | All Rights Reserved</p>
+      </footer>
+
+
+        <!-- ==== Footer part END ==== -->
+
+    <!-- linking JS -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="JS/script.js"></script>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+</body>
+</html>

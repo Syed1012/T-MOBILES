@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+     
+  <!-- Site Logo in title bar-->
+  <link rel = "icon" href = "images/favicon.png" type = "image/x-icon">
+      
+  <meta charset="UTF-8">
+  <title>T-MOBILES | HOME</title>
+  
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="CSS/style.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,300' rel='stylesheet' type='text/css'>
+
+   <!-- cart logo-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>   
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'>
+</head>
+
+<body>
+
+  <!--================================================================================================================= -->
+  
+<!-- HEADER -->
+<header>
+         <div class="container">
+            <div class="row">
+               
+              <div class="col-md-12 col-sm-12 col-lg-12 col-xl-3">
+                  <div class="logo">
+                     <a href="index.html" title="logo"> T-MOBILES </a>
+                  </div>
+
+              
+                  
+                  <div class="mob-menu">
+                     <span>
+                        <i class="fa fa-bars"></i>
+                     </span>
+                  </div>
+               </div>
+               
+               <div class="col-md-12 col-sm-12 col-lg-12 col-xl-9">
+                  <div class="main-menu">
+                     
+                     <ul class="nav">
+                        
+                      
+                      
+                        <li><a href="#homepage" class="active" id="homebutton">Home</a></li>
+
+                        <li><a href="#signup">Contact</a></li>
+
+
+                        <li class="brands" onmouseover="showBrandsDropdown()" onmouseout="hideBrandsDropdown()">
+                        <a href="Brands.html" id="brandsLink"> Brands </a>
+                        <div class="brands-dropdown tooltip">
+                            <a href="Apple.html">Apple</a><br>
+                            <a href="Samsung.html">Samsung</a><br>
+                            <a href="Vivo.html">Vivo</a><br>
+                            <a href="Oneplus.html">Oneplus</a><br>
+                            <a href="Redmi.html">Redmi</a><br>
+                            <a href="Google.html">Google</a><br>
+                            <a href="Nokia.html">Nokia</a><br>
+                            <a href="Oppo.html">Oppo</a><br>
+                            <a href="Huawei.html">Huawei</a>
+                        </div>
+                    
+                </li>
+
+                       <li>
+                    <a href="About.html" class="tooltip-about">About</a>
+                        </li> 
+                        
+                        <div class="cart">
+                          <div class="cart-icon">
+                            <i class="fa fa-shopping-cart"></i> 
+          
+                            <div class="cart-container">
+                              <div class="cart-header">
+                                <h2>Your Cart</h2>
+                                <button class="cart-close">&times;</button>
+                              
+                              </div>
+                              <table class="cart-items">
+                                <thead>
+                                  <tr>
+                                    <th>Item</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <!-- Cart items will be added dynamically -->
+                                </tbody>
+                                <tfoot>
+                                  <tr>
+                                    <div class="cart-total-container">
+                                      <span class="total-text"> <td colspan="2">Total:</td> </span>
+                                      <span id="cart-total"> <td id="cart-total">$0</td></span>
+                                    </div>
+                                    
+                                    
+                                  </tr>
+                                </tfoot>
+                              </table>
+                              
+                              <div class="cart-buttons">
+                                <button id="checkout-btn" class="btn btn-primary checkout-btn">
+                                  <span class="btn-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                  </span>
+                                  <span class="btn-text">Checkout</span>
+                                  <span class="btn-animation"></span>
+                                </button>
+                                
+                                <button id="clear-cart-btn" class="btn btn-danger clear-cart-btn">
+                                  <span class="btn-icon">
+                                    <i class="fas fa-trash"></i>
+                                  </span>
+                                  <span class="btn-text">Clear Cart</span>
+                                  <span class="btn-animation"></span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>  
+                     
+                     <ul class="right-nav">  
+                       <li class="login-trigger"> <a href="login/signin.html" data-target="#login" data-toggle="modal">Login/Register</a> </li>
+                     </ul>
+
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+ 
+ 
+<!-- =================================================================================================================  -->
+<!-- News letter -->
+
+
+ <div class="wrapper-newsletter" id="newsletterWrapper" style="display: none;">
+  <div class="header-newsletter">
+    <h1>Subscribe to our News letter</h1>
+    <p>Stay updated with the latest news and discounts.</p>
+  </div>
+  <form class="footer-newsletter" action="#" method="post">
+    <input type="email" name="email" placeholder="Enter your email address" required>
+    <button type="submit" class="btn-submit">Subscribe</button>
+    <button type="button" class="modal-close-btn" id="closeBtn">
+      <ion-icon name="close"></ion-icon>
+    </button>
+  </form>
+</div>
+
+
+
+<!-- =================================================================================================================  -->
+<!--section slider starts here-->
+
+      
+      <section class="slider" id="homepage">
+            <div class="image-slideshow">
+            
+              <div class="image fade">
+                <img src="images/img01.jpg" alt="Mountain Top">
+                </div>
+
+                <div class="image fade">
+                <img src="images/img02.jpg" alt="Palm Trees">
+                </div>
+
+                <div class="image fade">
+                    <img src="images/img03.jpg" alt="Neon sign">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+<!-- ================================================================================================================= -->
+
+        <!-- section 1 new arrivals starts here-->
+        <section id="cards">
+          <h2 class="mainheading1">New Arrivals</h2>
+          <div class="row">
+             
+            <!-- existing HTML code for item listings -->
+            <div class="column">
+                <div class="card">
+                  <img src="images/14pro.jpeg" alt="Product 1 max" style="width: 100%;">
+                  
+                  <h3>Product 1 max</h3>
+    
+                  <p class="price">1,39,999</p>
+    
+                  <p>Premium feel for your premium hands</p>
+    
+                  <p><button class="add-to-cart" >ADD TO CART</button></p>
+                </div>
+              </div>
+    
+              <div class="column">
+                <div class="card">
+                  <img src="images/s23u.jpg" alt="Samsung S23 Ultra" style="width: 100%;">
+                  <h3>Samsung S23 Ultra</h3>
+                  <p class="price">1,29,999</p>
+                  <p>Be the star of the shot at every frame</p>
+                  <p><button class="add-to-cart" >ADD TO CART</button></p>
+                </div>
+             </div>
+    
+              <div class="column">
+                <div class="card">
+                  <img src="images/pixel7a.jpg" alt="Pixel 7A" style="width: 100%;">
+                  <h3>Google Pixel 7A</h3>
+                  <p class="price">47,999</p>
+                  <p>Great photography made simple</p>
+                  <p><button class="add-to-cart" >ADD TO CART</button></p>
+                </div>
+              </div>
+    
+              <div class="column">
+                <div class="card">
+                  <img src="images/Oneplus11pro.jpeg" alt="One plus 11 pro" style="width: 100%;">
+                  <h3>One plus 11 pro</h3>
+                  <p class="price">59,999</p>
+                  <p>16 GB RAM  A for Always Smooth</p>
+                  <p><button class="add-to-cart" >ADD TO CART</button></p>
+                </div>
+              </div>
+    
+            </div>
+      </section>
+    
+    
+<!-- =================================================================================================================  -->
+    
+    <!--section 2 top picks starts here-->
+    <section id="cards">
+       <h2 class="mainheading1">Top Picks For You</h2>
+       <div class="row">
+           <div class="column">
+             
+            <div class="card">
+               <img src="images/vivo x80pro.jpg" alt="Vivo x80 pro" style="width: 100%;">
+               <h3>Vivo X80 Pro</h3>
+               <p class="price">1,39,999</p>
+               <p>Ultimate aesthetic design in you hands</p>
+               <p><button class="add-to-cart" >ADD TO CART</button></p>
+               
+             </div>
+    
+           </div>
+           
+           <div class="column">
+             <div class="card">
+               <img src="images/samsungzfold.jpg" alt="Samsung fold" style="width: 100%;">
+               <h3>Samsung Zfold 4</h3>
+               <p class="price">79,999</p>
+               <p>Your multitasking secret weapon </p>
+               <p><button class="add-to-cart" >ADD TO CART</button></p>
+             </div>
+           </div>
+    
+           <div class="column">
+             <div class="card">
+               <img src="images/iphone14pro.jpg" alt="Product 1" style="width: 100%;">
+               <h3>Product 1</h3>
+               <p class="price">99,999</p>
+               <p>An innovative 48 MP camera</p>
+               <p><button class="add-to-cart" >ADD TO CART</button></p>
+             </div>
+           </div>
+    
+           <div class="column">
+             <div class="card">
+               <img src="images/pixel7pro.jpg" alt="Pixel 7 pro" style="width: 100%;">
+               <h3>Google Pixel 7 Pro</h3>
+               <p class="price">69,999</p>
+               <p>5x telephoto zoom is here</p>
+               <p><button class="add-to-cart" >ADD TO CART</button></p>
+             </div>
+           </div>
+    
+         </div>
+    </section>
+
+<!-- =================================================================================================================  -->
+
+<!--contact from starts here-->
+
+
+<section class="section-form clearfix" id="signup" data-aos="fade-in" data-aos-duration="4000">
+   <div class="row">
+       <h2 class="mainheading1">We're happy to hear from you</h2>
+   </div>
+   <div class="row">
+       <form action="#" method="POST" class="contact-form">
+           <div class="row">
+               <div class="col span_1_of_3">
+                   <label>Name</label>
+               </div>
+               <div class="col span_2_of_3">
+                   <input type="text" name="name" id="name" placeholder="Your name" required>
+               </div>
+           
+           </div>
+           <div class="row">
+               <div class="col span_1_of_3">
+                   <label>Email</label>
+               </div>
+               <div class="col span_2_of_3">
+                   <input type="email" name="email" id="email" placeholder="Your Email" required>
+               </div>
+           
+           </div>
+           <div class="row">
+               <div class="col span_1_of_3">
+                   <label>How did you find us?</label>
+               </div>
+               
+               <div class="col span_2_of_3">
+                   <select name="find us" id="find-us">
+                       <option value="friends">Friends</option>
+                       <option value="search">Search engine</option>
+                       <option value="ad">Advertisement</option>
+                       <option value="other">Other</option>
+                   </select>
+               </div>
+           </div>
+           
+           <div class="row">
+               <div class="col span_1_of_3">
+                   <label>Newsletter</label>
+               </div>
+               <div class="col span_2_of_3">
+                   <input type="checkbox" name="news" id="news" checked>
+               </div>
+           
+           </div>
+           
+           <div class="row">
+               <div class="col span_1_of_3">
+                   <label>Drop a line</label>
+               </div>
+               <div class="col span_2_of_3">
+                   <textarea name="text" id="txt" cols="30" rows="10"></textarea>
+               </div>
+              </div>
+              
+           <div class="row">
+               <div class="col span_1_of_3">
+                   <label>&nbsp;</label>
+               </div>
+               <div class="col span_2_of_3">
+                   <input type="submit" value="Send-me">
+               </div>
+              </div>
+          </div>
+        </section>
+
+
+<!-- =================================================================================================================  -->
+
+<!-- ==== Footer part  ==== -->
+
+<footer class="footer">
+   <div class="waves">
+     <div class="wave" id="wave1"></div>
+     <div class="wave" id="wave2"></div>
+     <div class="wave" id="wave3"></div>
+     <div class="wave" id="wave4"></div>
+   </div>
+   <ul class="social-icon">
+     <li class="social-icon__item"><a class="social-icon__link" href="#">
+         <ion-icon name="logo-facebook"></ion-icon>
+       </a></li>
+     <li class="social-icon__item"><a class="social-icon__link" href="#">
+         <ion-icon name="logo-twitter"></ion-icon>
+       </a></li>
+     <li class="social-icon__item"><a class="social-icon__link" href="#">
+         <ion-icon name="logo-linkedin"></ion-icon>
+       </a></li>
+     <li class="social-icon__item"><a class="social-icon__link" href="#">
+         <ion-icon name="logo-instagram"></ion-icon>
+       </a></li>
+   </ul>
+   <ul class="menu">
+     <li class="menu__item"><a class="menu__link" href="#homepage">Home</a></li>
+     <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+     <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+     <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+     <li class="menu__item"><a class="menu__link" href="#signup">Contact</a></li>
+
+   </ul>
+   <p>&copy;2023 T-MOBILES | All Rights Reserved</p>
+ </footer>
+
+
+ <!-- ================================================================================================================= -->
+
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="JS/script.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+</body>
+</html>
